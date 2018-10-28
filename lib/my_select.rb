@@ -4,7 +4,7 @@ def my_select(collection)
  
  while i < collection.size
     if yield(collection[i]) == true
-      final_collection << yield(collection[i])
+      final_collection << collection[i]
     end 
     i += 1
   end 
